@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ / Góp ý | Lập trình Web Nhóm 1</title>
+    <link rel="icon" href="images/Favicon/Favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <video autoplay muted loop playsinline class="bg-video">
+        <source src="images/88425-607855984.mp4" type="video/mp4">
+    </video>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <img src="images/logo-nhom1-web.png" alt="Logo Lập trình Web Nhóm 1" class="logo-img">
+                    <span class="logo-text">Lập trình Web</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" >Trang chủ</a></li>
+                    <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                    <li><a href="thanh-vien.html">Thành viên</a></li>
+                    <li><a href="lien-he.html" class="active">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Menu">☰</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <h1>Liên hệ / Góp ý</h1>
+        </section>
+        <section class="contact-section">
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" name="name" required placeholder="Nhập họ tên">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Nội dung góp ý</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Viết góp ý của bạn..."></textarea>
+                </div>
+                <button type="submit" class="btn">Gửi góp ý</button>
+            </form>
+            <div class="contact-info">
+                <h3>Thông tin nhóm</h3>
+                <p>Nhóm 1 - Lập trình và Thiết kế Web - K13CTC4</p>
+                <p>Trường Đại học Kinh tế Công nghệ Thái Nguyên</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-info">Bài tập thực hành môn Lập trình và thiết kế web Nhóm 1 - K13CTC4</p>
+            <div class="footer-links">
+                <a href="lien-he.html">Liên hệ / Góp ý</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

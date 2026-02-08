@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách thành viên | Lập trình Web Nhóm 1</title>
+    <link rel="icon" href="images/Favicon/Favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script src="main.js" defer></script>
+<script>
+  const header = document.querySelector('.header');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+  header.classList.add('scrolled');
+} else {
+  header.classList.remove('scrolled');
+}
+  });
+</script>
+<body>
+        <video autoplay muted loop playsinline class="bg-video">
+        <source src="images/88425-607855984.mp4" type="video/mp4">
+    </video>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <img src="images/logo-nhom1-web.png" alt="Logo Lập trình Web Nhóm 1" class="logo-img">
+                    <span class="logo-text">Lập trình Web </span>
+                </div>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                    <li><a href="thanh-vien.html" class="active">Thành viên</a></li>
+                    <li><a href="lien-he.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Menu">☰</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <h1>Danh sách thành viên</h1>
+            <p>Click vào ảnh thành viên để xem thông tin chi tiết</p>
+        </section>
+        <section class="members-grid">
+            <article class="member-card" data-member="1"> 
+                <div class="member-avatar" tabindex="0">
+                    <img src="images/Thanhvien/TranTrongHieu.png" alt="Trần Trọng Hiếu" class="avatar-img">
+                </div>
+                <div class="member-info">
+                    <h3>Trần Trọng Hiếu</h3>
+                    <p class="member-id">Mã SV: TUE25C1TC076</p>
+                </div>
+                <div class="member-detail">
+                    <p><strong>Điện thoại:</strong> 0975249666</p>
+                    <p><strong>Email:</strong> <a href="mailto:hieutt189@gmail.com">hieutt189@gmail.com</a></p>
+                    <p><strong>Lớp:</strong> K13CTC4</p>
+                    <p><strong>Mô tả:</strong> Phụ trách giao diện, CSS.</p>
+                </div>
+            </article>
+            <article class="member-card" data-member="2"> 
+                <div class="member-avatar" tabindex="0">
+                    <img src="images/Thanhvien/NguyenVanHien.png" alt="Nguyễn Văn Hiến" class="avatar-img">
+                </div>
+                <div class="member-info">
+                    <h3>Nguyễn Văn Hiến</h3>
+                    <p class="member-id">Mã SV: TUE25C1TC073</p>
+                </div>
+                <div class="member-detail">
+                    <p><strong>Điện thoại:</strong> 0913854229</p>
+                    <p><strong>Email:</strong> <a href="mailto:Hiennv88@gmail.com">Hiennv88@gmail.com</a></p>
+                    <p><strong>Lớp:</strong> K13CTC4</p>
+                    <p><strong>Mô tả:</strong> Nội dung, chỉnh sửa tài liệu.</p>
+                </div>
+            </article>
+            <article class="member-card" data-member="3">
+                <div class="member-avatar" tabindex="0">
+                    <img src="images/Thanhvien/NguyenTheAnh.png" alt="Nguyễn Thế Anh" class="avatar-img">
+                </div>
+                <div class="member-info">
+                    <h3>Nguyễn Thế Anh</h3>
+                    <p class="member-id">Mã SV: TUE25C3TC071</p>
+                </div>
+                <div class="member-detail">
+                    <p><strong>Điện thoại:</strong> 0857833818</p>
+                    <p><strong>Email:</strong> <a href="mailto:Theanh123@gmail.com">Theanh123@gmail.com</a></p>
+                    <p><strong>Lớp:</strong> K13CTC4</p>
+                    <p><strong>Mô tả:</strong> Cấu trúc HTML, kiểm thử.</p>
+                </div>
+            </article>
+            <article class="member-card" data-member="4">
+                <div class="member-avatar" tabindex="0">
+                    <img src="images/Thanhvien/HoangTheAnh.png" alt="Hoàng Thế Anh" class="avatar-img">
+                </div>
+                <div class="member-info">
+                    <h3>Hoàng Thế Anh</h3>
+                    <p class="member-id">Mã SV: TUE25C1TC077</p>
+                </div>
+                <div class="member-detail">
+                    <p><strong>Điện thoại:</strong> 0982558343</p>
+                    <p><strong>Email:</strong> <a href="mailto:Hoanganh@gmail.com">Hoanganh@gmail.com</a></p>
+                    <p><strong>Lớp:</strong> K13CTC4</p>
+                    <p><strong>Mô tả:</strong> JavaScript, tương tác.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-info">Bài tập thực hành môn Lập trình và thiết kế web Nhóm 1 - K13CTC4</p>
+            <div class="footer-links">
+                <a href="lien-he.html">Liên hệ / Góp ý</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

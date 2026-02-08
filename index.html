@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lập trình Web Nhóm 1 - K13CTC4 | Trang chủ</title>
+    <link rel="icon" href="images/Favicon/Favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+  const header = document.querySelector('.header');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+  header.classList.add('scrolled');
+} else {
+  header.classList.remove('scrolled');
+}
+  });
+</script>
+<body>
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="images/88425-607855984.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+    </div>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo-link">
+                <div class="logo">
+                    <img src="images/logo-nhom1-web.png" alt="Logo Lập trình Web Nhóm 1" class="logo-img">
+                    <span class="logo-text">Lập trình Web</span>
+                </div>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Trang chủ</a></li>
+                    <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                    <li><a href="thanh-vien.html">Thành viên</a></li>
+                    <li><a href="lien-he.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Menu">☰</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <h1>LẬP TRÌNH WEB</h1>
+            <p>Nhóm 1 - K13CTC4 - Trường Đại học Kinh tế Công nghệ Thái Nguyên</p>
+        </section>
+        <section class="intro-preview">
+            <h2>Xin giới thiệu chút</h2>
+            <p>Chào mừng bạn đến với “ngôi nhà nhỏ” của chúng tôi!
+Website này là nơi nhóm tôi giới thiệu bản thân, chia sẻ sở thích và hành trình học tập trong môn Lập trình Web.
+Hy vọng bạn sẽ có trải nghiệm thú vị khi ghé thăm.</p>
+            <div class="btn-group">
+    <a href="gioi-thieu.html" class="btn btn-outline">Giới thiệu tổng quan</a>
+    <a href="thanh-vien.html" class="btn btn-outline">Làm quen với chúng tớ</a>
+</div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-info">Bài tập thực hành môn Lập trình và thiết kế web Nhóm 1 - K13CTC4</p>
+            <div class="footer-links">
+                <a href="lien-he.html">Liên hệ / Góp ý</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="welcome-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Xin chào!</h2>
+            <p>Chúng tôi là nhóm Lập trình Web - K13CTC4. Cảm ơn bạn đã ghé thăm.</p>
+            <button class="btn modal-ok">Đồng ý</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
